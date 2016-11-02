@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<body>
+<ui:composition template="templates/layout.xhtml">
+    <ui:define name="content">
+        <!-- Начало -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr align="left">
+                <td>
+                    <!-- Заголовок -->
+                    <div class="MainPart">Кадастровые единицы</div>
+                    <div class="bord_tbl_notop">
+                        <a href="javascript:history.go(-1);">Вернуться</a>&nbsp;
+                        <h:commandLink id="lbtAddNew" value="Добавить новую кадастровую единицу" action=""/>
+                    </div>
+                    <div class="bord_tbl_notop">
+                        <h:panelGrid id="prpItems" columns="20">
+                            <h:panelGroup>
+                                <table class="param_table">
+                                    <thead>
+                                    <tr>
+                                        <th>Название</th>
+                                        <th>Описание</th>
+                                        <th>CSS-стиль иконки</th>
+                                        <th>#</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="#{Container.ItemIndex}">
+                                        <td>
+                                            <
+                                            %# Eval("Name") %>
+                                        </td>
+                                        <td>
+                                            <
+                                            %# Eval("Description") %>
+                                        </td>
+                                        <td width="150px">
+                                            <
+                                            %# Eval("IconURL")%>
+                                        </td>
+                                        <td width="130px" align="center">
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h:panelGroup>
+                        </h:panelGrid>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- Конец -->
+    </ui:define>
+</ui:composition>
+</body>
+</html>

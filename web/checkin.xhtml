@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<body>
+<ui:composition template="templates/layout.xhtml">
+    <ui:define name="content">
+        <div class="MainPart">#{msg.check_in}</div>
+        <div class="bord_tbl_notop">
+            <h:form id="checkInForm">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.surname}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputText id="tbSurName" value="" required="true"
+                                         requiredMessage="#{msg.input_required_surname}"
+                                         style="width: 99%"></h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.name}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputText id="tbName" value="" required="true"
+                                         requiredMessage="#{msg.input_required_name}" style="width: 99%"></h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.patronymic}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputText id="tbPatronymic" value="" required="true"
+                                         requiredMessage="#{msg.input_required_patronymic}"
+                                         style="width: 99%"></h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.department}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:selectOneMenu id="ddlDepartments" value="" style="width: 100%">
+                                <f:selectItem itemValue=""></f:selectItem>
+                            </h:selectOneMenu>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.input_name}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputText id="tbLogin" value="" required="true" requiredMessage="#{msg.login_required}"
+                                         style="width: 99%"></h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.input_password}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputSecret id="tbPassword" value="" required="true"
+                                           requiredMessage="#{msg.password_required}"
+                                           style="width: 99%"></h:inputSecret>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.email}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputText id="tbEMail" value="" required="true" validator="#{tIValidator.validateEmail}"
+                                         requiredMessage="#{msg.input_required_email}" style="width: 99%">
+                                <h:message for="tbEMail" />
+                            </h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="custCaptFld_even"
+                            style="text-align:right;font-family:Palatino;font-style: italic; font-size: 16px">#{msg.phone}</td>
+                        <td class="custSmallData_evenlight" align="left">
+                            <h:inputText id="tbPhone" value="" required="true"
+                                         requiredMessage="#{msg.input_required__phone}"
+                                         style="width: 99%"></h:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td style="height:2px;" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right">
+                            <h:commandButton id="lbtCancel" action="#{tIUser.loginTiUser}" value="#{msg.cancel}"
+                                             style="margin: 10px"></h:commandButton>
+                            <h:commandButton id="lbtSave" action="#{tIUser.loginTiUser}" value="#{msg.check_in}"
+                                             style="margin: 10px"></h:commandButton>
+                        </td>
+                    </tr>
+                </table>
+            </h:form>
+            <div style="height: auto; vertical-align: bottom; position: absolute; bottom: 0px;
+            text-align: left; padding-bottom: 2px; padding-left: 5px; font-size: 10px; color: Gray;">
+                #{msg.external_ip}:
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<body>
+<ui:composition template="templates/layout.xhtml">
+    <ui:define name="content">
+        <div class="MainPart">#{msg.enter_systems}</div>
+        <div class="bord_tbl_notop">
+            <h:form id="loginForm">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" valign="top">
+                            <!-- -->
+                            <table border='0' cellpadding="1" cellspacing="0">
+                                <tr>
+                                    <td align="center" colspan="2" style="color: red;">
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table cellpadding="5" cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td height="20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" style="font-family:Palatino;font-style: italic; font-size: 16px">
+                                        #{msg.input_name}:
+                                    </td>
+                                    <td align="left">
+                                        <h:inputText id="UserNameLabel" value="#{tIUser.tiUserName}" required="true"
+                                                     requiredMessage="#{msg.login_required}" label="#{msg.input_name}">
+                                            <f:validateLength minimum="3" maximum="15"/>
+                                        </h:inputText>
+                                        <h:message for="UserNameLabel" style="color: red; margin: 10px"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" style="font-family:Palatino;font-style: italic; font-size: 16px">
+                                        #{msg.input_password}:
+                                    </td>
+                                    <td align="left">
+                                        <h:inputSecret id="password" value="#{tIUser.tiUserPasword}" required="true"
+                                                       redisplay="true" requiredMessage="#{msg.password_required}"
+                                                       label="#{msg.input_password}">
+                                            <f:validateLength minimum="8" maximum="20"/>
+                                        </h:inputSecret>
+                                        <h:message for="password" style="color: red; margin: 10px"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height='10'>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan='2'>
+                                        <h:commandButton action="#{tIUser.loginTiUser}" value="#{msg.input}"
+                                                         styleClass="login_button"
+                                                         onclick="return checkValue(this.form, '#{msg.login_required}');">
+                                        </h:commandButton>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- -->
+                        </td>
+                    </tr>
+                </table>
+            </h:form>
+            <div style="height: auto; vertical-align: bottom; position: absolute; bottom: 0px;
+            text-align: left; padding-bottom: 2px; padding-left: 5px; font-size: 10px; color: Gray;">
+                #{msg.external_ip}:
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
+</body>
+</html>

@@ -1,0 +1,3171 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma, verdana, sans-serif;
+    font-size: 8.3pt;
+    height: 100%;
+    width: 100%;
+}
+
+pre {
+    overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+/* #### ����� ��� �����-������: ������� ������������� #### */
+.a_no_decor {
+    text-decoration: none;
+}
+
+/* #### ����� ��� ��������� ����� #### */
+.MainHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+
+.Login {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: block;
+    background-color: #D4D0C8;
+    height: 26px;
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    /* # */
+    padding-left: 23px;
+    color: #0e3b50;
+    border-left: 3px solid #666699;
+}
+
+.CheckinKey {
+    height: 35px;
+    width: 20px;
+    display: block;
+    text-decoration: none;
+    float: right;
+    background-color: #D4D0C8;
+    background-image: url(checkin.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.LoginKey {
+    height: 35px;
+    width: 20px;
+    display: block;
+    text-decoration: none;
+    float: right;
+    background-color: #D4D0C8;
+    background-image: url(key.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.collapse {
+    background-image: url("backward.gif");
+    background-position: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.Logo {
+    display: block;
+    width: 40px;
+    height: 71px;
+    background: url("Logo.gif") 0 0 no-repeat;
+    text-decoration: none;
+}
+
+.Hide {
+    display: block;
+    width: 40px;
+    height: 30px;
+    background: url("hide.png") 0 0 no-repeat;
+    text-decoration: none;
+}
+
+.Show {
+    background-color: #aecced;
+    display: block;
+    width: 37px;
+    height: 7px;
+    background: url("show.gif") 0 0 no-repeat;
+    text-decoration: none;
+}
+
+.arr {
+    width: 5px;
+    height: 20px;
+    background-image: url("arrows.gif");
+}
+
+.collapse {
+    background-image: url("backward.gif");
+    background-position: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.headerShowed {
+    display: block;
+    visibility: visible;
+}
+
+.headerHided {
+    display: none;
+    visibility: hidden;
+}
+
+.rowShowed {
+    /*display: inline;*/
+    visibility: visible;
+}
+
+.rowHided {
+    display: none;
+    visibility: hidden;
+}
+
+/*����� ��� ��������� �������� �� ��������*/
+.MainPart {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #E2DFA8;
+    border-bottom-width: medium;
+    border-bottom-style: groove;
+    border-bottom-color: #666699;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bolder;
+    height: 30px;
+}
+
+.MainPart a {
+    text-decoration: none;
+}
+
+.TitlePart {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 20px;
+    font-size: medium;
+}
+
+.Event {
+    background-color: #dadfe5;
+}
+
+.EventCount {
+    padding: 5px 10px 5px 25px;
+    font-family: arial, sans-serif;
+    border: solid 3px #b6d1ee;
+    font-size: 12px;
+    color: Blue;
+    text-align: left;
+    background-color: #f7f5f4;
+}
+
+.EventCount a {
+    border: none;
+}
+
+/*.ch1
+{
+	height: 39px;
+	background-color: #e2dfa8;
+}
+
+.ch1 h1
+{
+	height: 31px;
+	background-color: #e2dfa8;
+	font-size: 20px;
+	padding: 8px 0 0 20px;
+	font-weight: bold;
+}
+
+.ch1 div
+{
+	height: 39px;
+	background-color: #e2dfa8;
+}*/
+
+/*����� ��� IndexView */
+.AddPart {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #E2DFA8;
+    border-bottom-width: medium;
+    border-bottom-style: groove;
+    border-bottom-color: #666699;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.AddPartContent {
+    border-left: 1px solid #666699;
+    border-right: 1px solid #666699;
+    border-bottom: 1px solid #666699;
+    padding: 6px 0 9px 0;
+}
+
+.AddPartContent ul {
+    margin: 0 20px 0 25px;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #465f74;
+}
+
+.AddPartContent li {
+    border-bottom: 1px dotted #b2b6d3;
+    padding: 4px 0;
+}
+
+.AddPartContent a {
+    color: #465f74;
+    text-decoration: none;
+}
+
+/* ����� ��� DataPager */
+.pagerItem, .autoCompletePagerItem {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.autoCompletePagerItem {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.currentPagerItem {
+    padding-left: 2px;
+    padding-right: 2px;
+    color: Red;
+}
+
+.pager {
+    background-color: #e6eff9;
+    text-align: left;
+    border-top: 1px solid #cac9ca;
+    border-right: 1px solid #cac9ca;
+    border-bottom: 1px solid #cac9ca;
+    border-left: 1px solid #cac9ca;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*����� ��� IndexView */
+.OrdPart {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #CCCCCC;
+    border-bottom-width: medium;
+    border-bottom-style: groove;
+    border-bottom-color: #666699;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.OrdPartContent {
+    border-left: 1px solid #666699;
+    border-right: 1px solid #666699;
+    border-bottom: 1px solid #666699;
+    padding: 6px 0 9px 0;
+}
+
+.OrdPartContent ul {
+    margin: 0 20px 0 25px;
+    padding: 0;
+    /*font-size: 12px;*/
+    font-family: arial, sans-serif;
+    color: #465f74;
+}
+
+.OrdPartContent li {
+    border-bottom: 1px dotted #b2b6d3;
+    padding: 4px 0;
+}
+
+.OrdPartContent a {
+    color: #465f74;
+    text-decoration: none;
+}
+
+/*End ����� ��� IndexView */
+
+ul#mainmenu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: auto;
+    position: relative;
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent url(nav_bg.png) repeat-x top left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+ul#mainmenu li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul#mainmenu li a {
+    display: block;
+    float: left;
+    color: #CCCCCC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 20px 0 20px;
+}
+
+ul#mainmenu li a:hover {
+    color: #FFFFFF;
+    height: 22px;
+    background: transparent url(nav_bg.png) 0px -30px no-repeat;
+}
+
+ul#mainmenu li a.current {
+    display: inline;
+    height: 22px;
+    background: transparent url(nav_bg_current.png) 0px -30px no-repeat;
+    float: left;
+    margin: 0;
+}
+
+a.button {
+    background: transparent url('roundedge-gray-left.gif') no-repeat top left;
+    display: block;
+    float: left; /* Change 13px as desired */
+    line-height: 22px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 30px) */
+    height: 30px; /* Height of button background height */
+    padding-left: 8px; /* Width of left menu image */
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+a:link.button, a:visited.button, a:hover.button, a:active.button {
+    color: white; /*button text color*/
+}
+
+a.button span {
+    background: transparent url('roundedge-gray-right.gif') no-repeat top right;
+    display: block;
+    padding: 4px 10px 4px 2px; /*Set 10px to be equal or greater than'padding-left' value above*/
+}
+
+a:hover.button { /* Hover state CSS */
+    text-decoration: underline;
+}
+
+.buttonwrapper { /* Container you can use to surround a CSS button to clear float */
+    overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+    width: 100%;
+}
+
+.buttonwrapper1 { /* Container you can use to surround a CSS button to clear float */
+    overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+    border-right: 1px solid #cac9ca;
+    border-left: 1px solid #cac9ca;
+    border-bottom: 1px solid #cac9ca;
+    padding: 5px 10px 20px 10px
+}
+
+.top {
+    height: 34px;
+    /*background-color: #dadfe5;*/
+    background: url("Header.gif");
+    background-repeat: no-repeat;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 0px;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #1e428c;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.imglink {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(Info.gif);
+    background-repeat: no-repeat;
+}
+
+/* #### ����� ��� ��������, ����������� �� ������ � ������ �� 100% #### */
+.p100 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.otst {
+    border: 1px solid red;
+    width: 1px;
+    height: 700px;
+    float: left;
+}
+
+.mbody {
+    height: 100%;
+}
+
+.ros {
+    margin-left: 10px;
+    width: 317px;
+    height: 25px;
+    font-size: 18px;
+    font-family: verdana, sans-serif, tahoma;
+    color: #999999;
+    font-weight: bold;
+    text-align: right;
+    float: left;
+}
+
+.str {
+    margin-left: 342px;
+    background: url(str_left.gif) no-repeat left top;
+    background-color: #f2faf2;
+    margin-right: 45px;
+}
+
+* html .str {
+    margin-right: 35px;
+}
+
+.str div {
+    height: 20px;
+    background: url(str_right.gif) no-repeat right top;
+    font-size: 12px;
+    padding: 5px 0 0 8px;
+}
+
+.head {
+    height: 91px;
+    background: url(head_bg.gif) repeat-x left top;
+    background-color: #d8dfe3;
+    width: 100%;
+}
+
+.imagefl {
+    background: url(forlogo.jpg) no-repeat left top;
+    width: 98px;
+    height: 91px;
+}
+
+.imback {
+    background: url(lineicons.gif) repeat-x left top;
+    width: 55px;
+}
+
+.imback2 {
+    background: url(dlico.gif) no-repeat left top;
+    width: 50px;
+}
+
+.line {
+    background: url(head_bg_line.jpg) no-repeat left top;
+    height: 72px;
+    text-align: right;
+    padding-top: 19px;
+    padding-left: 5px;
+}
+
+.login {
+    background: url(head_bg_right.gif) repeat-x left top;
+    width: 233px;
+}
+
+.logo, .img1, .img2, .img3 {
+    float: left;
+}
+
+.img1, .img2, .img3 {
+    float: left;
+    margin-top: 23px;
+}
+
+.formlog {
+    margin: 0 0 0 5px;
+    width: 233px;
+}
+
+.formlog input {
+    width: 105px;
+}
+
+* html .formlog input {
+    width: 120px;
+}
+
+.formlog td {
+    padding: 1px;
+    padding-right: 10px;
+}
+
+.px {
+    padding-left: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.b_logo {
+    background: url(logo.gif) repeat-x left top;
+    width: 80px;
+    height: 80px;
+    margin: 2px 0 0 4px;
+}
+
+.b_but1 {
+    background: url(b_uchet.gif) repeat-x left top;
+    width: 48px;
+    height: 48px;
+}
+
+.b_but2 {
+    background: url(b_baza.gif) repeat-x left top;
+    width: 48px;
+    height: 48px;
+}
+
+.b_but3 {
+    background: url(b_forum.gif) repeat-x left top;
+    width: 48px;
+    height: 48px;
+}
+
+.b_but4 {
+    background: url(b_kontakt.gif) repeat-x left top;
+    width: 48px;
+    height: 48px;
+}
+
+.b_enter {
+    background: url(b_enter.gif) repeat-x left top !important;
+    width: 48px;
+    height: 48px;
+}
+
+.main {
+    margin-top: 3px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+* html .main {
+    margin-top: 3px;
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.block {
+    width: 20%;
+    padding-right: 3px;
+}
+
+.tbblock {
+    margin-bottom: 3px;
+}
+
+.bltopleft {
+    height: 38px;
+    padding-left: 7px;
+    background: url(block_top_left.gif) no-repeat left top;
+    background-color: #f4f6f8;
+    border-bottom: 1px solid #adb9c2;
+}
+
+.bltopright {
+    height: 38px;
+    padding-right: 7px;
+    background: url(block_top_right.gif) no-repeat right top;
+    background-color: #f4f6f8;
+    border-bottom: 1px solid #adb9c2;
+}
+
+.hblock {
+    background-color: #f4f6f8;
+    border-bottom: 1px solid #adb9c2;
+    width: 99%;
+}
+
+.hblock div {
+    border-top: 1px solid #adb9c2;
+    font-size: 15px;
+    font-weight: bold;
+    color: #57595a;
+    padding: 9px 0 0 20px;
+    background: url(arrow.gif) no-repeat left bottom;
+}
+
+.cblock {
+    background-color: #e6ecef;
+}
+
+.ccblock {
+    border-left: 1px solid #adb9c2;
+    border-right: 1px solid #adb9c2;
+    padding: 6px 0 9px 0;
+}
+
+.cblock ul {
+    margin: 0 20px 0 25px;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #465f74;
+}
+
+.cblock li {
+    border-bottom: 1px dotted #b2b6d3;
+    padding: 4px 0;
+}
+
+.cblock a {
+    color: #465f74;
+}
+
+.blf {
+    background: url(block_foot_left.gif) no-repeat left bottom;
+    font-size: 0;
+}
+
+.blf1 {
+    background: url(block_foot_right.gif) no-repeat right bottom;
+}
+
+.blf2 {
+    border-bottom: 1px solid #adb9c2;
+    margin: 0 10px;
+    height: 9px;
+}
+
+.content {
+    padding-right: 5px;
+}
+
+.bod {
+    border: 1px solid #adb9c2;
+    padding: 3px;
+}
+
+.bod_bottom {
+    border: 1px solid #adb9c2;
+    padding: 3px;
+}
+
+.divtb1 {
+    border: 1px solid #adb9c2;
+    border-right: #adb9c2 1px solid;
+    border-left: #adb9c2 1px solid;
+    padding: 3px;
+}
+
+.filterDiv {
+    min-height: 16px;
+    border-right: 1px solid #cac9ca;
+    border-bottom: 1px solid #cac9ca;
+    border-left: 1px solid #cac9ca;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.filterTable {
+    border-right: 1px solid #cac9ca;
+    border-bottom: 1px solid #cac9ca;
+    border-left: 1px solid #cac9ca;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* ### width:100%; ### */
+
+* html .filterDiv {
+    height: 16px;
+    border-right: 1px solid #e2dfa8;
+    border-bottom: 1px solid #e2dfa8;
+    border-left: 1px solid #e2dfa8;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    display: block;
+}
+
+/* div - ������� � ����� ��� ����� divtb2 */
+.bord_tbl_notop {
+    border-right: 1px solid #e2dfa8;
+    border-bottom: 1px solid #e2dfa8;
+    border-left: 1px solid #e2dfa8;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* div - ������� � ����� divtb2a */
+.bord_tbl_top {
+    border-right: 1px solid #adb9c2;
+    border-bottom: 1px solid #adb9c2;
+    border-left: 1px solid #adb9c2;
+    border-top: 1px solid #adb9c2;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* # div - ������� � ����� ������ ������ # */
+.bord_only_top {
+    border-top: 1px solid #adb9c2;
+}
+
+/* # div - ������� � ����� ������ ����� # */
+.bord_only_bottom {
+    border-bottom: 1px solid #adb9c2;
+}
+
+/* # ��� padding # */
+.bord_tbl_top_nopad {
+    border-right: 1px solid #adb9c2;
+    border-bottom: 1px solid #adb9c2;
+    border-left: 1px solid #adb9c2;
+    border-top: 1px solid #adb9c2;
+}
+
+/*.divtb2a
+{
+	border-right: 1px solid #adb9c2;
+	border-bottom: 1px solid #adb9c2;
+	border-left: 1px solid #adb9c2;
+}*/
+
+/*.divtb3
+{
+	border-top: 1px solid #adb9c2;
+	border-left: 1px solid #adb9c2;
+}*/
+
+/*.divtb4
+{
+	border-top: 1px solid #adb9c2;
+}*/
+
+/*.divtb4a
+{
+	border-top: 1px solid #adb9c2;
+	white-space: nowrap; 
+	padding-left:5px; 
+	padding-top:3px; 
+	padding-bottom:3px;
+}
+
+.divtb5
+{
+	border-top: 1px solid #adb9c2;
+	border-right: 1px solid #adb9c2;
+}*/
+
+/* # divtb6 # */
+.bord_top_bottom {
+    border-top: 1px solid #adb9c2;
+    border-bottom: 1px solid #adb9c2;
+}
+
+.tdNW {
+    white-space: nowrap;
+}
+
+.tdNW110 {
+    white-space: nowrap;
+    width: 110px;
+}
+
+.tdNW60 {
+    white-space: nowrap;
+    width: 60px;
+}
+
+.tdNW210 {
+    white-space: nowrap;
+    width: 210px;
+}
+
+.footer {
+    height: 41px;
+    background: url(footer.gif) repeat-x left bottom;
+    margin-left: -10px;
+    position: absolute;
+    width: 100%;
+}
+
+* html .footer {
+    height: 41px;
+    background: url(footer.gif) repeat-x left bottom;
+    margin-left: -10px;
+    position: fixed;
+    width: 100%;
+}
+
+.odd {
+    background-color: #fff;
+    clear: both;
+}
+
+.odd_select {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.even {
+    background-color: #f7f5f4;
+    clear: both;
+}
+
+.even:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.odd:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.even_select {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.bold {
+    font-weight: bold;
+    /*color:Green;*/
+}
+
+.pale {
+    /*text-decoration: none;*/
+}
+
+/*.tbbl
+{
+	width: 100%;
+	border-spacing: 2;
+	border-collapse: collapse;
+	border: 0px;
+}
+.tbbl td
+{
+	padding-left: 5px;
+}*/
+/*.leftb
+{
+	background-color: #ebf0f1;
+	width: 40px;
+	padding: 5px 5px;
+	text-align: center;
+}
+.leftb img
+{
+	margin: 0;
+	padding: 0;
+}
+.curLeftb
+{
+	background-color: #e2dfa8;
+	width: 40px;
+	padding: 5px 5px;
+	text-align: center;
+}
+.curLleftb img
+{
+	margin: 0;
+	padding: 0;
+}*/
+
+/* table - ������� � ��������� ��������(���. � xxxItemView.ascx) *//*tbbl*/
+.item_cont_table {
+    width: 100%;
+    /*border-spacing: 2;*/
+    border-collapse: collapse;
+    border: 0px;
+}
+
+.item_cont_table td {
+    padding-left: 5px;
+}
+
+/* td - ����� ����� ������� ��������, � ������� */
+.item_cont_left {
+    background-color: #cac9ca;
+    width: 40px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.item_cont_left img {
+    margin: 0;
+    padding: 0;
+}
+
+/* td - ����� ����� ������� �������� ��������, � ������� */
+.item_cont_left_cur {
+    background-color: #e2dfa8;
+    width: 40px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.item_cont_left_cur img {
+    margin: 0;
+    padding: 0;
+}
+
+.t1 {
+    float: left;
+    width: 150px;
+}
+
+.t2 {
+    float: left;
+    width: 100px;
+}
+
+/*All*/
+.prms {
+    background-color: #f3f6f7;
+    padding: 3px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.icons {
+    background-color: #f3f6f7;
+    /*padding: 3px 0;*/
+    /*border-right: 6px solid #fff;*/
+    padding-right: 20px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.icons td {
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 8px 2px 4px;
+}
+
+.icons table {
+    width: 10%;
+    margin-left: 2px;
+    height: 33px;
+}
+
+/*����� ��� �����-������: ������� �������������*/
+.a_no_decor {
+    text-decoration: none;
+}
+
+.paddingline {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+/*Inv*/
+.prmsInv {
+    background-color: #f3f6f7;
+    padding: 0;
+}
+
+.iconsInv {
+    background-color: #f3f6f7;
+    padding: 0px 0;
+    border-right: 2px solid #fff !important;
+}
+
+.iconsInv td {
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 8px 2px 4px;
+}
+
+.iconsInv table {
+    width: 10%;
+    height: 33px;
+}
+
+/*----------------------------------*/
+
+.prline {
+    /*background: url(prlline.gif) no-repeat left top;
+    padding-right: 2px;
+    font-size: 0;*/
+
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 32px;
+    border-right-style: dashed;
+    border-right-color: #9c989c;
+    border-right-width: 1px;
+}
+
+.prms table {
+    height: 33px;
+    width: 50%;
+}
+
+.prms td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tbfil {
+    width: 40%;
+}
+
+.tbfil td {
+    width: 40%;
+}
+
+/*All*/
+.table2 {
+    width: 100%;
+}
+
+.table2 td {
+    background-color: #f0f1fb;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.table2_capt {
+    width: 30%;
+    white-space: nowrap;
+}
+
+.table2_data {
+    width: 70%;
+}
+
+/*Inv*/
+.table2Inv {
+    width: 100%;
+}
+
+.table2Inv td {
+    background-color: #f0f1fb;
+    border-bottom: 0px solid #fff;
+    border-right: 0px solid #fff;
+}
+
+td.last {
+    border-right: 0;
+}
+
+.lnk {
+    height: 14px;
+    font-size: 12px;
+    padding: 2px;
+    text-align: left;
+}
+
+.lnk a {
+    color: #526b7e;
+    text-decoration: none;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    position: absolute;
+    visibility: visible;
+    padding: 5px;
+    color: #8c9ca9;
+    border: 1px solid #adb9c2;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.filterControls {
+    font-family: Tahoma;
+    font-size: 8pt;
+    padding-left: 5px;
+}
+
+/* #########################################################*/
+/* ################### Dynamic menu style ##################*/
+/* #########################################################*/
+
+.menu {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.menu li {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 100;
+    margin-right: 1px;
+}
+
+.menu li span {
+    display: block;
+    z-index: 100;
+    background: #b2ab9b;
+    padding: 5px 10px;
+    font-size: 1.1em;
+}
+
+.menu li a, .menu li a:visited {
+    display: block;
+    padding: 0;
+}
+
+.menu dl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: url(transparency.gif);
+}
+
+.menu dt {
+    margin: 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #fff;
+    float: left;
+    border-right: 1px solid #fff;
+    background-color: #D4D0C8;
+}
+
+.menu dd {
+    display: none;
+    background: transparent;
+    border-bottom: 1px solid #cce;
+    clear: left;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 1em;
+    text-align: left;
+}
+
+.menu dt a, .menu dt a:visited {
+    display: block;
+    color: #000000;
+    padding: 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu dd a, .menu dd a:visited {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    background-color: #D4D0C8;
+    white-space: nowrap;
+}
+
+.menu li a:hover {
+    border: 0;
+    white-space: nowrap;
+}
+
+.menu li:hover dd, .menu li a:hover dd {
+    display: block;
+}
+
+.menu li:hover dl, .menu li a:hover dl {
+    border-bottom: 15px solid #e2dfa8;
+}
+
+.menu li:hover dt a, .menu li a:hover dt a, .menu dd a:hover {
+    background: #e2dfa8;
+    color: #534;
+    white-space: nowrap;
+}
+
+.menu_wrapper {
+    z-Index: 2000 !important;
+    height: 27px;
+    width: 100%;
+    background-color: #D4D0C8;
+    border-top: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* ################################################################*/
+/* ################### End of Dynamic menu style ##################*/
+/* ################################################################*/
+
+/* ################## SortDropdownList style ######################*/
+.sddlContextAscSortClass {
+    background-image: url(AscSorting.gif);
+    width: 20px;
+    height: 20px;
+}
+
+.sddlContextDescSortClass {
+    background-image: url(DesSorting.gif);
+    width: 20px;
+    height: 20px;
+}
+
+.sddlContextSelectText {
+    padding: 3px;
+    padding-right: 20px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.sddlContextMenuPanel {
+    text-align: left;
+    border: 1px solid #868686;
+    z-index: 10;
+    background: #FAFAFA;
+    cursor: default;
+    padding: 1px 1px 0px 1px;
+    font-size: 11px;
+}
+
+.sddlContextMenuBreak {
+    margin: 1px 1px 1px 1px;
+    padding: 0;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+    border-top: 1px solid #C5C5C5;
+}
+
+a.sddlContextMenuItem {
+    margin: 1px 0 1px 0;
+    display: block;
+    color: #003399;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px 5px 4px 5px;
+    white-space: nowrap;
+}
+
+a.sddlContextMenuItem-Selected {
+    font-weight: bold;
+}
+
+a.sddlContextMenuItem:hover {
+    background-color: #FFE6A0;
+    color: #003399;
+    border: 1px solid #D2B47A;
+    padding: 3px 3px 3px 3px;
+}
+
+/* ################## End SortDropdownList style ##################*/
+
+/* ##########################################################*/
+/* ################### Pager style ##################*/
+/* ##########################################################*/
+
+.pagerstyle TABLE {
+    border-spacing: 5 !important;
+    border-collapse: collapse !important;
+}
+
+/* #################################################################*/
+/* ################### end of Pager style ##################*/
+/* #################################################################*/
+
+/* ################################################################# */
+/* ################### TICustomer tables style ##################### */
+/* ################################################################# */
+.custTable {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-collapse: collapse;
+}
+
+.custTitleFld {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.custCaptFld {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.custCaptFld a {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.custSmallData {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+}
+
+/* # ��� ������������ ���� � TD �����-����� ������ # */
+.custCaptFld_even {
+    padding: 0px 0px 0px 5px;
+    white-space: nowrap;
+    width: 1%;
+    text-align: left;
+    background-color: #dfdfdf;
+    clear: both;
+}
+
+/* # ��� ������������ ���� � TD ������-����� ������ # */
+.custSmallData_evenlight {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    width: 20%;
+    background-color: #f7f5f4;
+    clear: both;
+}
+
+.custLargeData {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    white-space: normal;
+}
+
+.bannerData {
+    color: #be0000;
+    font-weight: bold;
+    padding: 5px 0px 0px 10px;
+}
+
+/* ################################################################# */
+/* ############### end of TICustomer tables style ################## */
+/* ################################################################# */
+
+/* ################################################################*/
+/* ################### UNIVERSAL FILTER STYLE #####################*/
+/* ################################################################*/
+.filter {
+    border-top: 0;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.selectedFilterNodeStyle {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ################################################################*/
+/* ############### End of UNIVERSAL FILTER STYLE ##################*/
+/* ################################################################*/
+
+/* ################################################################# */
+/* ########################## GIS style ############################ */
+/* ################################################################# */
+.gisStyle {
+    width: 100%;
+    height: 600px;
+}
+
+div.olMapViewport {
+    z-Index: 0;
+}
+
+/* ################################################################# */
+/* ####################### end of GIS style ######################## */
+/* ################################################################# */
+
+/* ################################################################# */
+/* ################### Async postback indicator #################### */
+/* ################################################################# */
+.popupFilterLoading {
+    height: 11px;
+    width: 43px;
+    background: url(ajax-loader.gif);
+    text-decoration: none;
+    float: left;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+/* ################################################################# */
+/* ############### end of async postback indicator ################# */
+/* ################################################################# */
+
+/* ################################################################# */
+/* ####################### Images output style ##################### */
+/* ################################################################# */
+
+/*##############################16x16################################*/
+/*EstateObject Full and Short views*/
+.estateViewKolPotomkovImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_kol_potomkov16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewParcelImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_zem_uchastki16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewInventarizaciaImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_inventarizacia16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewInventarizaciaImageAutocomplete {
+    float: right;
+    padding-left: 3px;
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_inventarizacia16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewGeodeziaImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_geodezia16x16.gif); /* �������, ������ ��� �������� �� ��, ��. � ����� ligth */
+    background-repeat: no-repeat;
+}
+
+.estateViewOcenkaImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_ocenka16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewGeosImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_geometry16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.estateViewKmlGeosImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(planet16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*TechDocument*/
+.techDocumentScanImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(Scanner.png);
+    background-repeat: no-repeat;
+}
+
+/*ParcelObject Full and Short views*/
+.parcelViewKolPotomkovImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_kol_potomkov16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewEstateImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_estate16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewCadastralImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_zemleustroystvo16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewSurveyImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_geodezia16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewValuationImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_valuation16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewGeosImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_geometry16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewKmlGeosImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(planet16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.parcelViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(parcel_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*AddressList Full view*/
+.addressViewKolObjectImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(address_kol_object16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.addressViewParcelImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(icon_2.gif);
+    background-repeat: no-repeat;
+}
+
+.addressViewEstateImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(icon_2.gif);
+    background-repeat: no-repeat;
+}
+
+/*Valuation Report Full view*/
+.valuationReportViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*Survey Report Full view*/
+.surveyReportViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*Cadastral Report Full view*/
+.cadastralReportViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*Extract Full view*/
+.extractViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/* comments */
+.comments {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(comment16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/* Tech passport Full view*/
+.techPassportViewFileImage {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_file16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.defaultImageCssClass16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(icon_2.gif);
+    background-repeat: no-repeat;
+}
+
+/* ################################################################# */
+/* ################## end of Images output style ################### */
+/* ################################################################# */
+
+/* ################################################################# */
+/* ####################### Images output style ##################### */
+/* ################################################################# */
+
+/*##############################32x32################################*/
+/*################# Address ##################*/
+.address_admin_okrug32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(address_admin_okrug32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.address_etc32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(address_etc32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.address_house32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(address_house32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.address_moskva32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(address_moskva32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.address_street32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(address_street32x32.gif);
+    background-repeat: no-repeat;
+}
+
+/*################ Estate ###################*/
+.estate_building32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_building32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.estate_complex32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_complex32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.estate_construction32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_construction32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.estate_premise32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_premise32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.estate_lineinoe32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_lineinoe32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.estate_plochadnoe32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_plochadnoe32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.estate_tochechnoe32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(estate_tochechnoe32x32.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## CadastralUnit ###################*/
+
+.unit_kvartal32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(unit_kvartal32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.unit_okrug32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(unit_okrug32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.unit_raion32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(unit_raion32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.unit_uchastok32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(unit_uchastok32x32.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## Customer ###################*/
+
+.customer_natural32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(customer32.gif);
+    background-repeat: no-repeat;
+}
+
+.customer_juridical32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(customer32.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## GZK ###################*/
+.gzk32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(gzk32x32.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## Order ###################*/
+.order32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(order32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.reclamation16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(reclamation16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.reclamationDisabled16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(ReclamationDisabled16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.order16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(order16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## Demand ###################*/
+.demand32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(demand32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.demand16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(demand16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.demand16x16Autocomplete {
+    float: right;
+    position: static;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background: url(demand16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.consignee16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(consignee16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## DemandServices ###################*/
+.demandservices16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(demandservices16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## Financed Document ###################*/
+.financedocument32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(financedocument32x32.gif);
+    background-repeat: no-repeat;
+}
+
+.financedocument16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(financedocument16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## Executors ###################*/
+.executors16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(executors16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*#################### DEFAULT ######################*/
+.defaultImageCssClass32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(icon_1.gif);
+    background-repeat: no-repeat;
+}
+
+.task_incoming16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(task_incoming16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.task_outgoing16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(task_outgoing16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.document16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(document16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.document16x16Autocomplete {
+    float: right;
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(document16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.task16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(task16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.incoming_docs {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(docs_incoming16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.outgoing_docs {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(docs_outgoing16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.key_document {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(key_document16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.key_task {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(key_task16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.key_graph {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(key_graph16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/*################## Successors/Predecessors ###################*/
+.predecessors {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(predecessors16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.successors {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(successors16x16.gif);
+    background-repeat: no-repeat;
+}
+
+/* ### �������� ������ ��� ### */
+.btiAddressRegister_32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(bti32x32.gif);
+    background-repeat: no-repeat;
+}
+
+/* ################################################################# */
+/* ###################### end of Images output style ############### */
+/* ################################################################# */
+
+/*.footer
+{
+	height: 41px;
+	background: url(footer.gif) repeat-x left bottom;
+	margin-left: -10px;
+	position: absolute;
+	width: 100%;
+}
+*html .footer
+{
+	height: 41px;
+	background: url(footer.gif) repeat-x left bottom;
+	margin-left: -10px;
+	position: fixed;
+	width: 100%;
+}*/
+
+/*#################### ����� ��� ������������� ����������� �������������� ����� ######################*/
+
+.form_divider {
+    border-right: 1px solid #cac9ca;
+    border-bottom: 1px solid #cac9ca;
+    border-left: 1px solid #cac9ca;
+    background-color: #cccccc;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form_divider_ligth {
+    border-right: 1px solid #cac9ca;
+    border-bottom: 1px solid #cac9ca;
+    border-left: 1px solid #cac9ca;
+    background-color: #fff3b3;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*#################### ����� ��� ������ ��������������/��������/������� ��������� ########################*/
+
+.editBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(EDITITEM.gif);
+    background-repeat: no-repeat;
+}
+
+.printBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(PRINT.gif);
+    background-repeat: no-repeat;
+}
+
+.reportBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(report.png);
+    background-repeat: no-repeat;
+}
+
+.divSumBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(DivSumByDepartment.gif);
+    background-repeat: no-repeat;
+}
+
+.selectBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(BACK.GIF);
+    background-repeat: no-repeat;
+}
+
+.setBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(setValue.gif);
+    background-repeat: no-repeat;
+}
+
+.addBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(addBtn.gif);
+    background-repeat: no-repeat;
+}
+
+.deleteBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 5px;
+    float: left;
+    background: url(DELITEM.gif);
+    background-repeat: no-repeat;
+}
+
+.linkBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 5px;
+    float: left;
+    background: url(InsertHyperlinkHS.png);
+    background-repeat: no-repeat;
+}
+
+.upBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(ArrowUp.gif);
+    background-repeat: no-repeat;
+}
+
+.downBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(ArrowDown.gif);
+    background-repeat: no-repeat;
+}
+
+.signBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 5px;
+    float: left;
+    background: url(SIGNITEM.gif);
+    background-repeat: no-repeat;
+}
+
+.wizardBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(wizard.jpg);
+    background-repeat: no-repeat;
+}
+
+.checkBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(checkvalues.gif);
+    background-repeat: no-repeat;
+}
+
+.checkDisabledBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(checkvalues_disabled.gif);
+    background-repeat: no-repeat;
+}
+
+.uncheckBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(uncheckvalues.gif);
+    background-repeat: no-repeat;
+}
+
+.cancelBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(cancel.gif);
+    background-repeat: no-repeat;
+}
+
+.cancelDisabledBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(cancel_disabled.gif);
+    background-repeat: no-repeat;
+}
+
+.saveBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(save.GIF);
+    background-repeat: no-repeat;
+}
+
+.saveDisabledBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(save_disabled.GIF);
+    background-repeat: no-repeat;
+}
+
+.copyBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(copy16x16.gif);
+    background-repeat: no-repeat;
+}
+
+.logBtn {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    padding-left: 2px;
+    float: left;
+    background: url(log-16x16.png);
+    background-repeat: no-repeat;
+}
+
+/* ##########   ����� ��� ����������� ���������� � �������    ########### */
+.param_table {
+    border: 1px solid #cac9ca;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.param_tableTH {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #cac9ca;
+}
+
+.param_table th {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #cac9ca;
+}
+
+.param_table td {
+    border: 1px solid #cac9ca;
+    padding-left: 3px
+}
+
+.param_table_wb {
+    width: 100%;
+    border: 0px !important;
+}
+
+.param_table_wb th {
+    text-align: center;
+    font-weight: bold;
+    border: 0px !important;
+}
+
+.param_table_wb td {
+    border: 0px !important;
+    padding: 1px 1px 1px 1px !important;
+}
+
+/* ### ����� ��� ��������� ### */
+.splitter {
+    width: 3px;
+    height: 100%;
+    background-color: #E2DFA8;
+    cursor: e-resize;
+}
+
+/*######### ��� AutoCompleteSelector-� ############*/
+
+/* AutoComplete flyout */
+
+.autocomplete_pagedListContainer {
+    text-align: left;
+    cursor: default;
+    list-style: none;
+    padding: 0px;
+    margin: 0px important;
+    background-color: White;
+    color: Black;
+    border: solid 1px buttonshadow;
+}
+
+.autocomplete_completionListElement {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: inherit;
+    color: windowtext;
+    border: buttonshadow;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    overflow: auto;
+    text-align: left;
+    list-style-type: none;
+}
+
+/* AutoComplete highlighted item */
+.autocomplete_highlightedListItem {
+    background-color: highlight;
+    color: white;
+    padding: 1px;
+}
+
+/* AutoComplete item */
+.autocomplete_listItem {
+    background-color: window;
+    color: windowtext;
+    padding: 1px;
+}
+
+/********************************************************************/
+/* ******** ����� ��� ����������� ������ � ��������� ����� ******** */
+/********************************************************************/
+/* ## ����� ��� ����������� ����� � �������� (������������ �� ������� ����) ## */
+.total_r {
+    padding-left: 3px;
+    text-align: right;
+    font-weight: bold
+}
+
+/* ## ����� ��� ����������� ������ � ����������� � ������� (������������ �� ������� ����) ## */
+.cell_r {
+    padding-left: 3px;
+    text-align: right;
+}
+
+/* ## ����� ��� ����������� ������ � ����������� � ������� (������������ �� ������ ����) ## */
+.cell_l {
+    padding-left: 3px;
+    text-align: left;
+}
+
+/* ## ����� ��� ����������� ����� � �������� (������������ �� ������) ## */
+.total_c {
+    padding-left: 3px;
+    text-align: center;
+    font-weight: bold
+}
+
+/* ## ����� ��� ����������� ������ � ����������� � ������� (������������ �� ������) ## */
+.cell_c {
+    padding-left: 3px;
+    text-align: center;
+}
+
+/* ############# ����� ��� ������� �������� ���-�� ################### */
+/* ���������� ��� ������� */
+.wizardDoneStep {
+    color: Green;
+}
+
+/* ������� ��� ������� */
+.wizardCurrentStep {
+    color: Blue;
+    font-weight: bold;
+}
+
+/* �� ���������� ��� ������� */
+.wizardFutureStep {
+    color: Gray;
+}
+
+/* ###### ����� ��� ������� ����������� ##### */
+.exp_main {
+    font-size: 7.3pt;
+    border-collapse: collapse;
+    cellspacing: 0px;
+    cellpadding: 1px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+}
+
+.after_exp_main {
+    border-width: 0px;
+!important;
+}
+
+.exp_main th {
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    background-color: #eaeaea;
+}
+
+.after_exp_main th {
+    border-width: 0px;
+!important;
+}
+
+.exp_main td {
+    text-align: center;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+}
+
+.after_exp_main td {
+    border-width: 0px;
+!important;
+}
+
+.exp_main .exp_tr_edited {
+    background-color: #80FFFF;
+}
+
+.exp_main .exp_tr_edited td {
+    background-color: #80FFFF;
+}
+
+.exp_main input {
+    font-size: 7.3pt;
+}
+
+.exp_main select {
+    font-size: 7.3pt;
+}
+
+.exp_main .exp_td_num {
+    width: 50px;
+}
+
+.exp_main .exp_td_cmd {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.exp_main .exp_td_txt {
+    text-align: left;
+}
+
+.exp_main .exp_td_total {
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: right;
+    background-color: #eaeaea;
+}
+
+/* ############ �������� ��������� ����� �� �������� � ����������� */
+.task_background_view {
+    background-color: #f7f5f4;
+}
+
+.task_priority_low {
+    color: #008c00;
+    clear: both;
+}
+
+.task_priority_low:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_priority_medium {
+    color: #808000;
+    clear: both;
+}
+
+.task_priority_medium:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_priority_high {
+    color: #ff0000;
+    clear: both;
+}
+
+.task_priority_high:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_dateEnd_less {
+    color: Red;
+    clear: both;
+}
+
+.task_dateEnd_less:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_dateEnd_date_less {
+    color: Red;
+    clear: both;
+}
+
+.task_dateEnd_equal {
+    color: Blue;
+    clear: both;
+}
+
+.task_dateEnd_equal:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_dateEnd_great {
+    clear: both;
+}
+
+.task_dateEnd_great:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_dateEnd_date_great {
+}
+
+.task_status_notStarted {
+    color: #ff0000;
+    clear: both;
+}
+
+.task_status_notStarted:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_status_inWork {
+    color: #2f2fff;
+    clear: both;
+}
+
+.task_status_inWork:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_status_completed {
+    color: #008c00;
+    clear: both;
+}
+
+.task_status_completed:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_status_closed {
+    color: Black;
+    clear: both;
+}
+
+.task_status_closed:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_status_suspended {
+    color: #7e7e7e;
+    clear: both;
+}
+
+.task_status_suspended:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.task_status_rejected {
+    color: #7e7e7e;
+    clear: both;
+}
+
+.task_status_rejected:hover {
+    background-color: #e6eff9;
+    clear: both;
+}
+
+.flow_document_status_registration {
+    color: #2f2fff;
+    white-space: nowrap;
+    padding-left: 3px;
+}
+
+.flow_document_status_no_registration {
+    white-space: nowrap;
+    padding-left: 3px;
+}
+
+/* ###### ����� ����������� �� ������������� ����� */
+.attachItem {
+    text-decoration: none;
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(attachtb.gif);
+    background-repeat: no-repeat;
+}
+
+.noAttachItem {
+    text-decoration: none;
+}
+
+/* ����� ��� ��������� �������� */
+.goCursor {
+    text-decoration: none;
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background-position: center;
+    background: url(ewr202m.gif);
+    background-repeat: no-repeat;
+}
+
+.ati_main_table {
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: gray;
+    width: 100%;
+}
+
+.ati_main_table_header_tr {
+    background-image: url(OrdPart.gif);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #FFFFFF;
+}
+
+.ati_main_table_header_bottom_tr {
+    background-image: url(OrdPartReverce.gif);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #FFFFFF;
+}
+
+.ati_main_table_even_tr {
+    background-color: White;
+}
+
+.ati_main_table_header_td {
+
+    text-align: left;
+}
+
+.ati_main_table_odd_tr {
+    background-color: #e0e0e0;
+}
+
+/* ### EntityView default css theme ### */
+.ev_table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px;
+}
+
+.ev_table td {
+    padding-left: 5px;
+}
+
+.ev_icon {
+    background-color: #cac9ca;
+    width: 40px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.ev_icon img {
+    margin: 0;
+    padding: 0;
+}
+
+.ev_defaultImg16x16 {
+    height: 16px;
+    width: 16px;
+    position: static;
+    cursor: pointer;
+    background: url(icon_2.gif);
+    background-repeat: no-repeat;
+}
+
+.ev_defaultImg32x32 {
+    height: 32px;
+    width: 32px;
+    position: static;
+    cursor: pointer;
+    background: url(icon_1.gif);
+    background-repeat: no-repeat;
+}
+
+.ev_separator {
+    height: 2px;
+    background-color: #fff;
+    clear: both;
+}
+
+.ev_caption_cell {
+    padding: 0px 0px 0px 5px;
+    white-space: nowrap;
+    width: 1%;
+    text-align: left;
+    background-color: #dfdfdf;
+    clear: both;
+}
+
+.ev_value_cell {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    width: 20%;
+    background-color: #f7f5f4;
+    clear: both;
+}
+
+.ev_counters_cell {
+    background-color: #dfdfdf;
+    vertical-align: middle;
+    padding-left: 1px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+
+.ev_counters_cell a {
+    text-decoration: none;
+}
+
+.ev_counters {
+    width: 100%;
+}
+
+.ev_counter {
+    float: left;
+    text-align: center;
+}
+
+.ev_counter_separator {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 32px;
+    border-right-style: dashed;
+    border-right-color: #9c989c;
+    border-right-width: 1px;
+}
+
+.ev_status {
+    background-color: #dfdfdf;
+    padding: 3px 0;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    float: right;
+}
+
+.ev_status_text {
+    color: #be0000;
+}
+
+/* -----------------����� ������ ���� ����������� � � ���------------------ */
+.gisWindowHeader {
+    background: #D1E2F5;
+    border-bottom: 1px solid #9A999A;
+    cursor: move;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.gisWindowBody {
+    overflow: auto;
+    background: #ffffff;
+}
+
+.gisWindowFooter {
+    background: #ECE9D8;
+    border-top: 1px solid #9A999A;
+}
+
+.gisWindowProgress {
+    background: url(ajax-loader.gif);
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+.gisMinimizeButton {
+    background: url(minimize.gif);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+
+.gisMaximizeButton {
+    background: url(maximize.gif);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+
+/*-------------------------------------------------------*/
+/*-----------------����� ��������-��������---------------*/
+.PagerScrolled {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.PagerScrolled table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.PagerScrolled table td {
+    padding: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.PagerScrolled span {
+    display: block;
+    padding: 3px 0;
+}
+
+.PagerScrolled .font_class:hover {
+    background: #E6EFF9;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.PagerScrolled .font_class {
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.PagerScrolled span strong {
+    padding: 2px 6px;
+    color: #fff;
+
+    background: #508CFE;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.PagerScrolled .scroll_bar {
+    width: 100%;
+    height: 15px;
+    position: relative;
+    margin-top: 1px;
+    z-index: 0;
+}
+
+.PagerScrolled .scroll_trough {
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.PagerScrolled .scroll_thumb {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 3px;
+    top: 0;
+    left: 0;
+    font-size: 1px;
+    background: #363636;
+}
+
+.PagerScrolled .scroll_knob {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background: url(slider_knob.gif) no-repeat 50% 50%;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.PagerScrolled .current_page_mark {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    overflow: hidden;
+    /*background:#ff6c24;*/
+    background: #508CFE;
+}
+
+.fullsize .scroll_thumb {
+    display: none;
+}
+
+.PagerScrolled_pages {
+    width: 600px;
+    text-align: right;
+    font-size: 0.8em;
+    color: #808080;
+    margin-top: -10px;
+}
+
+.ajax__calendar {
+    z-index: 50;
+}
+
+.ajax__calendar_container {
+    z-index: 50;
+}
+
+/*---------------------------------------------------------*/

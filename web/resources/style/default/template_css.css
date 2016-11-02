@@ -1,0 +1,46 @@
+@charset "utf-8";
+#tab_niz {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    color: #000000;
+    background-attachment: fixed;
+    background-color: #FFFFFF;
+    border: thin solid #dadfe5;
+    overflow: hidden;
+    visibility: visible;
+    height: 175px;
+    width: 465px;
+}
+
+.td_niz {
+    border: thin solid #fff;
+    background-color: #f1f1f1;
+    width: 145px;
+    height: 15px;
+    visibility: visible;
+}
+
+.td_niz_small {
+    border: thin solid #fff;
+    background-color: #f1f1f1;
+    width: 35px;
+    height: 15px;
+    visibility: visible;
+}
+
+#tab_niz_back {
+
+    background-attachment: fixed;
+    background-image: url(../images/tab_vniz_ten.gif);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFFFFF;
+    visibility: visible;
+    height: 10px;
+    width: 465px;
+}

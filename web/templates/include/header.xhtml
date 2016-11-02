@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<body>
+<ui:composition>
+    <div id="divHeader">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="37" height="60" rowspan="2">
+                    <a id="A1" class="Logo" href="index">&nbsp;</a>
+                </td>
+                <td class="top" height="30">
+                    <div class="buttonwrapper">
+                        <div class="MainHeader"></div>
+                        <h:link title="#{msg.input_output}" styleClass="LoginKey" outcome="login"/>
+                        <h:link title="#{msg.registration}" styleClass="CheckinKey" outcome="checkin"/>
+                        <div class="Login">#{timain.currentUser}<br/>#{msg.on_server} #{timain.currentServer}</div>
+                    </div>
+                </td>
+            </tr>
+            <!-- Навигатционный бар-->
+            <tr>
+                <td height="30">
+                    <ul id="mainmenu">
+                        <li class="mainmenubutton"><a class="current">#{msg.news}</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <!-- -->
+            <tr>
+                <td width="40" valign="top">
+                    <a id="hrefShowHide" class="Hide" href="javascript:ShowHideHeader();">&nbsp;</a>
+                    <script type="text/javascript">
+                        function Empty() {}
+
+                        function ShowHideHeader()
+                        {
+                            var hf_divHeader = $get('<!--<%= divHeader.ClientID %>-->');
+                            var hf_divMenu = $get('<!--<%= divMenu.ClientID %>-->');
+                            var hf_hrefShowHide =  $get('<!--<%= hrefShowHide.ClientID %>-->');
+                            if (!hf_divHeader) return;
+                            if (!hf_divMenu) return;
+                            if (!hf_hrefShowHide) return;
+
+                            if ((hf_divHeader.className == 'headerShowed'))  { //если заголовок виден
+                                hf_divHeader.className='headerHided';
+                                hf_divMenu.className='';
+                                hf_hrefShowHide.className = 'Hide';
+                            <!--<%= Page.ClientScript.GetCallbackEventReference(this, "'header1'", "Empty", null) %>;-->
+                            }
+                            else { //если заголовок скрыт
+                                if (hf_divMenu.className == '') { //если меню видно
+                                    hf_divHeader.className='headerHided';
+                                    hf_divMenu.className='headerHided';
+                                    hf_hrefShowHide.className = 'Show';
+
+                                <!--<%= Page.ClientScript.GetCallbackEventReference(this, "'header0'", "Empty", null) %>;-->
+                                }
+                                else { //если меню скрыто
+                                    hf_divMenu.className='';
+                                    hf_hrefShowHide.className = 'Hide';
+                                    hf_divHeader.className='headerShowed';
+                             <!--<%= Page.ClientScript.GetCallbackEventReference(this, "'header2'", "Empty", null) %>;-->
+                                }
+                            }
+                        }
+                    </script>
+                </td>
+                <td>
+                    <div id="divMenu">
+                        <!--menu-->
+
+                        <div class="menu_wrapper" style="width: 100%">
+
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</ui:composition>
+</body>
+</html>
